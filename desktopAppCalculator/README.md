@@ -1,7 +1,7 @@
-this is the open source code for the java desktop application using the JavaFx library version 19 architecture x64 type SDK OS windows [download here](https://gluonhq.com/products/javafx/)
+in the InheritanceCalculator you'll find the open source code for the java desktop application using the JavaFx library version 19 architecture x64 type SDK OS windows [download here](https://gluonhq.com/products/javafx/), alongside with Maven.
 
 ### to use this application you need to :
-- download the application from this repository.
+- download the ***InheritanceCalculator-1.0.jar*** from this repository.
 - download javafx version 19.
 - change the path in the .bat file to the path of the downloaded javafx library.
 - run the .bat file.
