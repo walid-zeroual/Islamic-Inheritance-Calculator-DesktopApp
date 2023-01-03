@@ -1,0 +1,1 @@
+java --module-path C:\javafx-sdk-19\lib --add-modules javafx.controls,javafx.fxml -jar InheritanceCalculator-1.0.jar

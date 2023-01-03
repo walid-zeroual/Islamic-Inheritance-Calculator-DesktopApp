@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane id="Pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="454.0" prefWidth="753.0" style="-fx-background-color: #EAE3E2;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Inheritance.InheritanceController">
+   <children>
+      <Button id="calculateButton" layoutX="62.0" layoutY="289.0" mnemonicParsing="false" onAction="#onCalculateButtonClick" text="Calculate" textAlignment="JUSTIFY" textFill="#030303" textOverrun="CLIP" />
+      <SplitPane dividerPositions="0.3506944444444444" layoutX="62.0" layoutY="89.0" prefHeight="165.0" prefWidth="627.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="163.0" prefWidth="105.0" style="-fx-background-color: #EAE3E2;">
+               <children>
+                  <TextField id="wivesText" alignment="CENTER" editable="false" layoutY="14.0" prefHeight="38.0" prefWidth="188.0" promptText="number of wives" style="-fx-background-color: #FFFFFF;" text="Number of Wives" />
+                  <TextField id="sonsText" alignment="CENTER" editable="false" layoutY="63.0" prefHeight="38.0" prefWidth="188.0" promptText="number of sons" style="-fx-background-color: #FFFFFF;" text="Number of Sons" />
+                  <TextField id="daughtersText" alignment="CENTER" editable="false" layoutY="112.0" prefHeight="38.0" prefWidth="188.0" promptText="number of daughters" style="-fx-background-color: #FFFFFF;" text="Number  of Daughters" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="165.0" prefWidth="422.0" style="-fx-background-color: #EAE3E2;">
+               <children>
+                  <Slider fx:id="nbWivesSlider" blockIncrement="1.0" layoutY="14.0" majorTickUnit="1.0" max="4.0" minorTickCount="0" onMouseReleased="#onWifeSliderChanged" prefHeight="38.0" prefWidth="400.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" />
+                  <Separator layoutY="51.0" prefHeight="3.0" prefWidth="398.0" />
+                  <Slider fx:id="nbSonsSlider" blockIncrement="1.0" layoutY="63.0" majorTickUnit="2.0" max="20.0" minorTickCount="1" onMouseReleased="#onSonSliderChanged" prefHeight="38.0" prefWidth="400.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" />
+                  <Separator layoutY="109.0" prefHeight="3.0" prefWidth="398.0" />
+                  <Slider fx:id="nbDaughtersSlider" blockIncrement="1.0" layoutY="112.0" majorTickUnit="2.0" max="20.0" minorTickCount="1" onMouseReleased="#onDaughterSliderChanged" prefHeight="38.0" prefWidth="400.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" />
+               </children>
+            </AnchorPane>
+        </items>
+         <padding>
+            <Insets right="10.0" />
+         </padding>
+      </SplitPane>
+      <TextField fx:id="inheritance" alignment="CENTER" layoutX="62.0" layoutY="38.0" prefHeight="38.0" prefWidth="188.0" promptText="put inheritance amount here" />
+       <TextArea id="resultTextArea" fx:id="resultTextArea" editable="false" layoutX="289.0" layoutY="289.0" prefHeight="126.0" prefWidth="400.0" promptText="this is where the result will be shown" style="-fx-background-color: #EAE3E2;">
+         <font>
+            <Font name="Meiryo" size="12.0" />
+         </font></TextArea>
+   </children>
+</Pane>
